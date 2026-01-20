@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive ES6 Playground</title>
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+  <header>
+    <h1>Interactive ES6 Playground</h1>
+    <input type="text" id="search" placeholder="Search examples...">
+    <button id="downloadPdf">Download PDF</button>
+  </header>
+
+  <main>
+    <div id="categories"></div>
+    <div id="exampleDisplay">
+      <h2 id="exampleTitle">Select an example</h2>
+      <pre><code id="exampleCode"></code></pre>
+      <button id="runCode">Run Code</button>
+      <button id="copyCode">Copy Code</button>
+      <div id="output"></div>
+    </div>
+  </main>
+
+  <script src="scripts/examples.js"></script>
+  <script src="scripts/app.js"></script>
+  <script src="scripts/pdfGenerator.js"></script>
+</body>
+</html>
